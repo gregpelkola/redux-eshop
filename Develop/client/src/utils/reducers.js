@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
@@ -12,7 +11,7 @@ import {
 } from './actions';
 
 
-export const reducer = (state, action) => {
+export default function reducer(state = initalState, action) {
   switch (action.type) {
     
     case UPDATE_PRODUCTS:
